@@ -32,40 +32,40 @@
     </div>
     </div>
     <hr class="border-yellow-500">
-    <div class="flex my-28 ">
-        <div class="ml-16 w-[619px] pt-15">
+    <div class="md:flex md:my-28 p-5 ">
+        <div class="md:ml-16 md:w-[619px] md:pt-15">
             <img src="./img/five-stars.svg" alt="">
             Die <strong>#1 </strong>bei <strong>40.000+ Unternehmen</strong>
-            <h1 class="font-bold text-5xl py-3">Sie sind von der ISDN Abschaltung betroffen?</h1>
+            <h1 class="font-bold text-3xl md:text-5xl py-3">Sie sind von der ISDN Abschaltung betroffen?</h1>
             <p class="mt-1">Wechseln Sie in nur 14 Tagen zu moderner Cloud-Telefonie – ohne hohe Kosten, ohne Stress und ohne Unterbrechungen.</p>
-            <div class="mt-6"><p class="flex gap-3"><img src="/img/check-mark.png" alt="">Ihre Telefonnummern <strong>bleiben erhalten</strong></p></div>
-            <div><p class="flex gap-3"><img src="/img/check-mark.png" alt="">Keine <strong>teuren Anschaffungskosten</strong></p></div>
-            <div><p class="flex gap-3"> <img src="./img/check-mark.png" alt="">Betreuung durch unser <strong>österreichisches Team</strong></p>
+            <div ><p class="flex"><img src="/img/check-mark.png" alt="">Ihre Telefonnummern <strong>bleiben erhalten</strong></p></div>
+            <div><p class="flex"><img src="/img/check-mark.png" alt="">Keine <strong>teuren Anschaffungskosten</strong></p></div>
+            <div><p class="flex"> <img src="./img/check-mark.png" alt="">Betreuung durch unser <strong>österreichisches Team</strong></p>
             </div>
             <div class="border border-yellow-500 lg:w-[520px] rounded-lg p-4 mt-5">
                 <p class="">
                     "Unsere ISDN-Leitung wurde mit nur 6 Wochen Frist gekündigt. Hostprofis hat unser neues System in nur 14 Tagen eingerichtet und wir konnten alle Nummern behalten. Keine Ausfallzeit, kein Stress."
                 </p>
-                <div class="flex p-2">
+                <div class="flex p-2 ">
                     <div class="pr-2"><img src="./img/gregor-zeisl.png" alt=""></div>
                     <div><p class="font-bold">Gregor Zeisl</p>
                     <img src="./img/five-stars.svg" alt=""></div>
                 </div>
         </div>
     </div>
-    <form class="bg-[#FAF3EB] border-1 border-yellow-400 rounded-lg p-10 ">
-        <h1 class="text-4xl font-bold w-[499px] text-center">Jetzt 100% kostenlos und unverbindlich beraten lassen!</h1>
-        <div class="flex px-3 pt-8">
-            <div>
-              <p class="text-[#344054]">Vor- und Nachname</p>
+    <form class="bg-[#FAF3EB] border-1 border-yellow-400 rounded-lg p-5 md:w-[530px] mt-8">
+        <h1 class="text-2xl md:text-4xl font-bold w-[291px] w-full text-center">Jetzt 100% kostenlos und unverbindlich beraten lassen!</h1>
+        <div class="md:flex px-3 pt-8 gap-3">
+            <div class="w-[227px]">
+              <label for="name"class="text-[#344054]">Vor-und Nachname</label>
               <input
                 type="text"
                 class="border-2 border-gray-300 rounded-full p-2 mb-4 mr-3 bg-white w-[227px]"
                 placeholder="Max Mustermann"
               />
             </div>
-            <div>
-              <p class="text-[#344054]">Firmenname</p>
+            <div class="w-[227px]">
+              <label for="name"class="text-[#344054]">Firmenname</label>
               <input
                 type="text"
                 class="border-2 border-gray-300 rounded-full p-2 mb-4 bg-white w-[227px]"
@@ -73,47 +73,53 @@
               />
             </div>
           </div>
-          <div class="flex px-3">
-            <div>
-              <p class="text-[#344054]">Email</p>
+
+           <div class="md:flex px-3 gap-3">
+            <div class="w-[227px]">
+              <label for="email"class="text-[#344054] w-full">Email</label>
               <input
-                type="email"
-                class="border-2 border-gray-300 rounded-full p-2 mb-4 mr-3 bg-white w-[227px]"
+                type="text"
+                class="border-2 border-gray-300 rounded-full p-2 mb-4 mr-3 bg-white w-full"
                 placeholder="max@mustermann.at"
               />
             </div>
-            <div>
-              <p class="text-[#344054]">Telefonnummer</p>
+            <div class="w-[227px]">
+              <label for="name"class="text-[#344054] w-full">Telafonnummer</label>
               <input
-                type="number"
-                class="border-2 border-gray-300 rounded-full p-2 mb-4 bg-white w-[227px]"
+                type="text"
+                class="border-2 border-gray-300 rounded-full p-2 mb-4 bg-white w-full"
                 placeholder="+43 123456789"
               />
             </div>
           </div>
-          <div class="px-3 ">
-            <p class="pb-3">Wie viele Mitarbeiter hat Ihr Unternehmen?</p>
-            <label class=" bg-white border-2 border-gray-300 rounded-full p-3 mb-4 pr-5 text-[#344054] w-[466px] text-gray-400">Anzahl der Mitarbeiter
-            <select class=" ml-57"> 
-                <option ></option>
-                <option >2</option>
-                <option >3</option>
-                <option >4</option>
+
+
+        
+          <div class=" px-3 md:w-[466px]">
+            <label for="select">Wie viele Mitarbeiter hat Ihr Unternehmen?</label>
+            <div class="border-2 border-gray-300 rounded-full text-center">
+            <select name="select" class=" m-4 pr-5 text-[#344054] text-gray-400"> 
+                <option value="0">Wählen Sie die Anzahl Ihrer Mitarbeiter</option>
+                <option value="1">1</option>
             </select>
-            </label>
+            </div>
           </div>
-          <div class="mt-5 grid grid-cols- px-3">
-            <button
-              class="w-[466px] bg-yellow-500 rounded-full p-3 text-white font-bold hover:bg-yellow-200"
+          <div class="mt-5 ">
+            <div>
+                <button
+              class="md:w-[466px] bg-yellow-500 rounded-full p-3 text-white font-bold hover:bg-yellow-200"
             >
               Jetzt Kostenlos Beraten Lassen
             </button>
-            <a href="#" class="text-center">
+            </div>
+            <div class=" text-gray-500 flex text-center items-center">
+                <a href="#">
               <i class="fa-solid fa-lock mr-2"></i>Ihre Daten sind sicher
               – Keine Werbung!</a
             >
+            </div>
           </div>
-          <div class="flex px-9 pt-4">
+          <div class="flex px-9 pt-4 grid grid-cols-5 gap-2">
             <img src="/img/top-50.png" alt="" class="mr-1" />
             <img src="/img/pcpro-a-list.png" alt="" class="mr-1" />
             <img src="/img/leade-enterpriser.png" alt="" class="mr-1" />
