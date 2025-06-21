@@ -9,28 +9,53 @@
     ></script>
     <link rel="stylesheet" href="tailwind.css">
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <title>Hostprofis LP 4P (DE)</title>
 </head>
 <body>
-    <nav class="bg-[#301900]">
-        <ul class="flex  p-4 text-white">
-            <li><a href="#" class="hover:text-gray-400 flex ml-40"><img src="/img/red-white-circle.png" alt="" class="mr-2">AUS ÖSTERREICH</a></li>
-            <li><a href="#" class="hover:text-gray-400 flex"><img src="/img/coin-img.png " alt="" class="mr-2 ml-20">BIS ZU 60% GÜNSTIGER</a></li>
-            <li><a href="#" class="hover:text-gray-400 flex"><img src="/img/file-img.png" alt="" class="mr-2 ml-20">JEDERZEIT KÜNDBAR</a></li>
-            <li><a href="#" class="hover:text-gray-400 flex"><img src="/img/user-img.png" alt="" class="mr-2 ml-20">40.000+ KUNDEN</a></li>
+    <nav class="bg-[#301900] px-40">
+        <ul class="flex  p-4 text-white gap-25">
+            <li><a href="#" class="hover:text-gray-400 flex "><img src="/img/red-white-circle.png" alt="" class="">AUS ÖSTERREICH</a></li>
+            <li><a href="#" class="hover:text-gray-400 flex"><img src="/img/coin-img.png " alt="" class="">BIS ZU 60% GÜNSTIGER</a></li>
+            <li class=" lg:block hidden"><a href="#" class="hover:text-gray-400 flex"><img src="/img/file-img.png" alt="" class="">JEDERZEIT KÜNDBAR</a></li>
+            <li><a href="#" class="hover:text-gray-400 flex "><img src="/img/user-img.png" alt="" class="">40.000+ KUNDEN</a></li>
     </nav>
-    <div class="bg-[#FAF4EB] flex p-4 text-white flex ">
-        <img src="/img/logo.png" alt="" class="ml-10 mr-10 ">
-        <div class="flex text-black mt-5">
-            <a href="#" class="hover:text-gray-400 mr-20 mt-2">FUNKTIONEN</a>
-            <a href="#" class="hover:text-gray-400 mr-20 mt-2">PREISE</a>
-            <a href="#" class="hover:text-gray-400 mr-20 mt-2">REVIEWS</a>
-            <a href="#" class="hover:text-gray-400 mr-20 mt-2">VERGLEICH</a>
-            <a href="#" class="hover:text-gray-400 mr-20 mt-2">FAQ</a>
-            <button class="p-2 mb-5 border-2 border-yellow-500 text-yellow-600 rounded-full hover:bg-gray-100">
-             Beratung Vereinbaren<i class="fa-solid fa-arrow-right ml-2"></i></button>
+    
+
+<nav class=" border-gray-200 bg-[#FAF4EB]">
+  <div class="max-w-screen-xl flex flex-wrap items-center  mx-auto p-4">
+        <img src="/img/logo.png" class="h-8 w-50" alt=" Logo" />
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 ml-39" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto px-20" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 gap-8 md:p-0 mt- border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse">
+        <li>
+          <a href="#" class="block py-2 px-3 text-black rounded-sm md:p-0 mt-5" aria-current="page">FUNKTIONEN</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-black rounded-sm md:p-0 mt-5" aria-current="page">PREISE</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-black rounded-sm md:p-0 mt-5" aria-current="page">REVIEWS</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-black rounded-sm md:p-0 mt-5 " aria-current="page">VERGLEICH</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-black rounded-sm md:p-0 mt-5 " aria-current="page">FAQ</a>
+        </li>
+        <button class="p-2 mb-5 border-2 border-yellow-500 text-yellow-600 rounded-full hover:bg-gray-100 mt-3">
+             Beratung Vereinbaren<i class="fa-solid fa-arrow-right ml-2"></i>
+        </button>
+        </ul>
     </div>
-    </div>
+  </div>
+</nav>
     <hr class="border-yellow-500">
     <div class="md:flex md:my-28 p-5 ">
         <div class="md:ml-16 md:w-[619px] md:pt-15">
@@ -86,7 +111,7 @@
             <div class="w-[227px]">
               <label for="name"class="text-[#344054] w-full">Telafonnummer</label>
               <input
-                type="text"
+                type="number"
                 class="border-2 border-gray-300 rounded-full p-2 mb-4 bg-white w-full"
                 placeholder="+43 123456789"
               />
@@ -104,7 +129,7 @@
           <div class="mt-5 ">
             <div>
                 <button
-              class="md:w-[466px] bg-yellow-500 rounded-full p-3 text-white font-bold hover:bg-yellow-200 w-ful" 
+              class="md:w-[466px] bg-yellow-500 rounded-full p-3 text-white font-bold hover:bg-yellow-200 w-full" 
             >
               Jetzt Kostenlos Beraten Lassen
             </button>
@@ -174,7 +199,10 @@
     </div>
     <hr class="md:my-[116px] md:mx-[150px] m-20 border-gray-200">
     <div class="md:flex md:px-[62px] px-6 md:pt-20">
-        <div class="md:w-[531px] md:ml-20 md:mt-10 w-full order-2">
+        <div class="sm-px-6 mt-10 md:order-2 ">
+            <img src="./img/laptop-img .png" alt="">
+        </div>
+        <div class="md:w-[531px] md:ml-20 md:mt-10 w-full mr-3">
             <h1 class=" md:text-3xl text-2xl font-bold">Persönlicher und regionaler Support aus Österreich</h1>
             <p class="md:mr-13 mt-[18px]">Wir sind ein österreichisches Unternehmen mit Standorten in allen Bundesländern. Sie erreichen uns jederzeit – und bei dringenden Fällen sind wir blitzschnell vor Ort!</p>
                 <div class="mt-6">
@@ -191,9 +219,6 @@
                      <p class="mr-15">Verlassen Sie sich auf <strong>erstklassigen Support aus Österreich</strong> mit persönlicher Betreuung vor Ort.</p>
                 </div>
             </div>
-        </div>
-        <div class="sm-px6 mt-10">
-            <img src="./img/laptop-img .png" alt="">
         </div>
     </div>
     <hr class="md:my-[116px] md:mx-[150px] m-20 border-gray-200">
@@ -222,6 +247,9 @@
     </div>
     <hr class="md:my-[116px] md:mx-[150px] m-20 border-gray-200">
     <div class="md:flex md:px-[62px] md:pt-20 px-6">
+        <div class="border-2 border-yellow-400 rounded-lg bg-[#FAF7EB] mt-10 md:order-2">
+            <img src="./img/image 506.png" alt="">
+        </div>
         <div class="md:w-[531px] md:ml-20 md:mt-10">
             <h1 class="md:text-3xl text-2xl mr-4 font-bold md:mr-10">Professionelle Geschäftsanrufe von jedem Gerät aus tätigen</h1>
             <p class="md:mr-25 mt-5">Bleiben Sie überall erreichbar – ob im Büro, unterwegs oder im Home-Office:</p>
@@ -240,7 +268,6 @@
                 </div>
             </div>
         </div>
-        <div class="border-2 border-yellow-400 rounded-lg bg-[#FAF7EB] mt-10"><img src="./img/image 506.png" alt=""></div>
     </div>
         <hr class="my-[116px] mx-[150px] border-gray-200">
         <div class="md:flex md:px-[62px] md:pt-20 md:mb-50 px-6">
