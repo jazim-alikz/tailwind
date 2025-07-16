@@ -6,3 +6,10 @@ body{
       margin: 0;
       padding: 0;
 }
+.bg {
+    background-image: url(/img/girl.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 812px;
+}
